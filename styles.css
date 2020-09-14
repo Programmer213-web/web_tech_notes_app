@@ -3,10 +3,14 @@
   margin: 0rem;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  -webkit-animation: page-in 1s ease;
+          animation: page-in 1s ease;
 }
 
 html {
   font-size: 62.5%;
+  -webkit-animation: '';
+          animation: '';
 }
 
 body {
@@ -22,10 +26,7 @@ body {
   font-family: 'Poppins';
   padding: 3rem;
   text-transform: uppercase;
-  display: inline-block;
-  margin-left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  display: block;
   background-image: -webkit-gradient(linear, left top, right top, from(#119600), to(blue));
   background-image: linear-gradient(to right, #119600, blue);
   -webkit-text-fill-color: transparent;
@@ -82,6 +83,8 @@ body {
   color: #0400ff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-animation: '';
+          animation: '';
 }
 
 .container .interact .button-container .add-note {
@@ -120,6 +123,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   overflow-y: auto;
+  position: relative;
 }
 
 .notes .note {
@@ -182,6 +186,32 @@ body {
   cursor: pointer;
 }
 
+.notes #placeholder {
+  position: absolute;
+  width: 60%;
+  height: 30%;
+  background-color: lightblue;
+  border-radius: 2rem;
+  top: 30%;
+  left: 20%;
+  font-size: 2rem;
+  font-family: "Poppins";
+  padding-top: 3.5rem;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(yellow), to(#00ff9d));
+  background-image: linear-gradient(to bottom, yellow, #00ff9d);
+  -webkit-box-shadow: 0px 2px 3px grey;
+          box-shadow: 0px 2px 3px grey;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-shadow: 0px 2px 5px grey;
+}
+
+.notes #placeholder:hover {
+  -webkit-box-shadow: 0px 2px 5px grey;
+          box-shadow: 0px 2px 5px grey;
+}
+
 #edit {
   height: 3rem;
   width: 15.5rem;
@@ -199,5 +229,33 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
+  -webkit-animation: '';
+          animation: '';
+}
+
+@-webkit-keyframes page-in {
+  from {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes page-in {
+  from {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

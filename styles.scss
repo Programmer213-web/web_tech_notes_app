@@ -2,10 +2,12 @@
     padding: 0rem;
     margin: 0rem;
     box-sizing: inherit;
+    animation: page-in 1s ease;
 }
 
 html{
     font-size: 62.5%;
+    animation: '';
 }
 
 body{
@@ -19,9 +21,7 @@ body{
     font-family: 'Poppins';
     padding: 3rem;
     text-transform: uppercase;
-    display: inline-block;
-    margin-left: 50%;
-    transform: translate(-50%, 0);
+    display: block;
     background-image: linear-gradient(to right, rgb(17, 150, 0), blue);
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -68,6 +68,7 @@ body{
                 font-weight: bold;
                 color: rgb(4, 0, 255);
                 transition: all 0.5s ease;
+                animation: '';
             }
             .add-note{
                 display: block;
@@ -101,6 +102,7 @@ body{
     margin-top: 1rem;
     margin-bottom: 1rem;
     overflow-y: auto;
+    position: relative;
 
     .note{
         position: relative;
@@ -148,6 +150,26 @@ body{
             cursor: pointer;
         }
     }
+    #placeholder{
+        position: absolute;
+        width: 60%;
+        height: 30%;
+        background-color: lightblue;
+        border-radius: 2rem;
+        top: 30%;
+        left: 20%;
+        font-size: 2rem;
+        font-family: "Poppins"; 
+        padding-top: 3.5rem;
+        text-align: center;
+        background-image: linear-gradient(to bottom, yellow, rgb(0, 255, 157));
+        box-shadow: 0px 2px 3px grey;
+        transition: all 0.5s ease;
+        &:hover{
+            box-shadow: 0px 2px 5px grey;
+        }
+        text-shadow: 0px 2px 5px grey;
+    }
 }
 
 
@@ -167,4 +189,16 @@ body{
     text-transform: uppercase;
     transition: all 0.5s;
     opacity: 0;
+    animation: '';
+}
+
+@keyframes page-in{
+    from{
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

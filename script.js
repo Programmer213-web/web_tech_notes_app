@@ -21,10 +21,11 @@ document.querySelector(".add-note").addEventListener("click", function() {
         console.log(box);
         console.log(text);
         if(text != "")
-        {
+        {   
             box.style.display = "block";
             box.innerHTML = text;
             number++;
+            document.getElementById("placeholder").style.opacity = "0";
         }
     }
     else if(status == 1)
