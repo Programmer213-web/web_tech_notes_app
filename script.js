@@ -2,11 +2,11 @@ var number = 1;
 var status = 0;
 
 document.querySelector(".add-note").addEventListener("mouseover", function() {
-    document.querySelector(".popover").style.display = "block";
+    document.querySelector(".popover").style.opacity = "1";
 });
 
 document.querySelector(".add-note").addEventListener("mouseout", function() {
-    document.querySelector(".popover").style.display = "none";
+    document.querySelector(".popover").style.opacity = "0";
 });
 
 document.querySelector(".add-note").addEventListener("click", function() {

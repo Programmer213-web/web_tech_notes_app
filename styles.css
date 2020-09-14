@@ -68,7 +68,7 @@ body {
 .container .interact .button-container .popover {
   height: 3rem;
   width: 13rem;
-  display: none;
+  opacity: 0;
   position: absolute;
   top: -8px;
   left: 3rem;
@@ -80,8 +80,8 @@ body {
   background-color: #00ff73;
   font-weight: bold;
   color: #0400ff;
-  -webkit-transition: display 0.5s ease;
-  transition: display 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .container .interact .button-container .add-note {
