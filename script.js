@@ -1,6 +1,5 @@
 var number = 1;
 var status = 0;
-var id = "";
 
 document.querySelector(".add-note").addEventListener("mouseover", function() {
     document.querySelector(".popover").style.display = "block";

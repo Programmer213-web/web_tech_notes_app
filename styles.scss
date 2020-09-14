@@ -45,7 +45,7 @@ body{
         .new-note{
             border-radius: 10px;
             height: 13rem;
-            width: 50%;
+            width: 70%;
             padding: 1rem;
             font-size: 2rem;
         }
@@ -67,6 +67,7 @@ body{
                 background-color: rgb(0, 255, 115);
                 font-weight: bold;
                 color: rgb(4, 0, 255);
+                transition: display 0.5s ease;
             }
             .add-note{
                 display: block;
@@ -77,6 +78,10 @@ body{
                 margin-top: 2rem;
                 background-image: linear-gradient(to right, rgb(255, 196, 0), rgba(53, 134, 172, 0.836));
                 cursor: pointer;
+                transition: all 0.5s ease;
+                &:hover{
+                    transform: scale(1.15);
+                }
                 .plus-sign{
                     color: rgb(3, 143, 57);
                 }
@@ -113,5 +118,12 @@ body{
         margin-left: auto;
         display: none;
         overflow-x: hidden;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &::selection{
+            background-color: rgb(0, 255, 234);
+        }
     }
 }

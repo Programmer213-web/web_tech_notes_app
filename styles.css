@@ -56,7 +56,7 @@ body {
 .container .interact .new-note {
   border-radius: 10px;
   height: 13rem;
-  width: 50%;
+  width: 70%;
   padding: 1rem;
   font-size: 2rem;
 }
@@ -80,6 +80,8 @@ body {
   background-color: #00ff73;
   font-weight: bold;
   color: #0400ff;
+  -webkit-transition: display 0.5s ease;
+  transition: display 0.5s ease;
 }
 
 .container .interact .button-container .add-note {
@@ -93,6 +95,13 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#ffc400), to(rgba(53, 134, 172, 0.836)));
   background-image: linear-gradient(to right, #ffc400, rgba(53, 134, 172, 0.836));
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container .interact .button-container .add-note:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .container .interact .button-container .add-note .plus-sign {
@@ -129,5 +138,20 @@ body {
   margin-left: auto;
   display: none;
   overflow-x: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.notes .note:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.notes .note::-moz-selection {
+  background-color: #00ffea;
+}
+
+.notes .note::selection {
+  background-color: #00ffea;
 }
 /*# sourceMappingURL=styles.css.map */
