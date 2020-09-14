@@ -17,6 +17,7 @@ document.querySelector(".add-note").addEventListener("click", function() {
         console.log(boxid);
         let textarea = document.getElementsByClassName("new-note");
         let text = textarea[0].value;
+        textarea[0].value = '';
         let box = document.getElementById(boxid);
         console.log(box);
         console.log(text);
@@ -32,6 +33,7 @@ document.querySelector(".add-note").addEventListener("click", function() {
     {
         let note = document.getElementById(id);
         let newvalue = document.getElementsByClassName("new-note")[0].value;
+        document.getElementsByClassName("new-note")[0].value = '';
         note.innerHTML = newvalue;
         status = 0;
         document.getElementById("edit").style.opacity = 0;
