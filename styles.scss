@@ -13,6 +13,21 @@ body{
     background-image: linear-gradient(to right, rgb(0, 255, 191), rgb(136, 255, 0), rgb(204, 0, 255));
 }
 
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Poppins';
+    padding: 3rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    background-image: linear-gradient(to right, rgb(17, 150, 0), blue);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 .container{
     width: 90vw;
     margin: auto;
@@ -32,6 +47,7 @@ body{
             height: 13rem;
             width: 50%;
             padding: 1rem;
+            font-size: 2rem;
         }
 
         .button-container{

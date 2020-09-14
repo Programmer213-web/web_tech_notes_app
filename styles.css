@@ -16,6 +16,23 @@ body {
   background-image: linear-gradient(to right, #00ffbf, #88ff00, #cc00ff);
 }
 
+.heading {
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Poppins';
+  padding: 3rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-image: -webkit-gradient(linear, left top, right top, from(#119600), to(blue));
+  background-image: linear-gradient(to right, #119600, blue);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .container {
   width: 90vw;
   margin: auto;
@@ -41,6 +58,7 @@ body {
   height: 13rem;
   width: 50%;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 .container .interact .button-container {
