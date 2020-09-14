@@ -106,5 +106,28 @@ body {
 
 .notes {
   width: 40%;
+  border-radius: 30px;
+  background-color: yellow;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+}
+
+.notes .note {
+  width: 80%;
+  height: minmax(40%, auto);
+  background-color: blue;
+  color: white;
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  padding: 0.5em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
