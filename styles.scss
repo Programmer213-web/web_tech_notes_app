@@ -10,6 +10,7 @@ html{
 
 body{
     box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(0, 255, 191), rgb(136, 255, 0), rgb(204, 0, 255));
 }
 
 .container{
@@ -29,23 +30,42 @@ body{
         .new-note{
             border-radius: 10px;
             height: 13rem;
-            width: 40%;
+            width: 50%;
             padding: 1rem;
         }
 
         .button-container{
+            position: relative;
+            .popover{
+                height: 3rem;
+                width: 13rem;
+                display: none;
+                position: absolute;
+                top: -8px;
+                left: 3rem;
+                border-radius: 20px;
+                font-size: 2rem;
+                text-align: center;
+                padding-top: .4rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: rgb(0, 255, 115);
+                font-weight: bold;
+                color: rgb(4, 0, 255);
+            }
             .add-note{
                 display: block;
                 height: 10rem;
                 width: 10rem;
                 clip-path: circle(20% at 50% 48.8%);
                 margin-left: -2.5rem;
+                margin-top: 2rem;
                 background-image: linear-gradient(to right, rgb(255, 196, 0), rgba(53, 134, 172, 0.836));
+                cursor: pointer;
                 .plus-sign{
                     color: rgb(3, 143, 57);
                 }
             }
-            :hover{
+            &:hover{
                 filter: drop-shadow(0px 2px 1px grey);
             }
         }

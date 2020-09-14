@@ -12,6 +12,8 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00ffbf), color-stop(#88ff00), to(#cc00ff));
+  background-image: linear-gradient(to right, #00ffbf, #88ff00, #cc00ff);
 }
 
 .container {
@@ -37,8 +39,29 @@ body {
 .container .interact .new-note {
   border-radius: 10px;
   height: 13rem;
-  width: 40%;
+  width: 50%;
   padding: 1rem;
+}
+
+.container .interact .button-container {
+  position: relative;
+}
+
+.container .interact .button-container .popover {
+  height: 3rem;
+  width: 13rem;
+  display: none;
+  position: absolute;
+  top: -8px;
+  left: 3rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: .4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #00ff73;
+  font-weight: bold;
+  color: #0400ff;
 }
 
 .container .interact .button-container .add-note {
@@ -48,15 +71,17 @@ body {
   -webkit-clip-path: circle(20% at 50% 48.8%);
           clip-path: circle(20% at 50% 48.8%);
   margin-left: -2.5rem;
+  margin-top: 2rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffc400), to(rgba(53, 134, 172, 0.836)));
   background-image: linear-gradient(to right, #ffc400, rgba(53, 134, 172, 0.836));
+  cursor: pointer;
 }
 
 .container .interact .button-container .add-note .plus-sign {
   color: #038f39;
 }
 
-.container .interact .button-container :hover {
+.container .interact .button-container:hover {
   -webkit-filter: drop-shadow(0px 2px 1px grey);
           filter: drop-shadow(0px 2px 1px grey);
 }
