@@ -16,10 +16,13 @@ document.querySelector(".add-note").addEventListener("click", function() {
     let text = textarea[0].value;
     let box = document.getElementById(boxid);
     console.log(box);
-    number++;
     console.log(text);
-    box.style.display = "block";
-    box.innerHTML = text;
+    if(text != "")
+    {
+        box.style.display = "block";
+        box.innerHTML = text;
+        number++;
+    }
 });
 
 var notelist = document.querySelectorAll(".note");
