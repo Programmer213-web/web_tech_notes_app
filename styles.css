@@ -1,0 +1,67 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: -webkit-gradient(linear, left top, right top, from(#cc00ff), color-stop(#88ff00), to(#00ffbf));
+  background-image: linear-gradient(to right, #cc00ff, #88ff00, #00ffbf);
+  border-radius: 5rem;
+  height: 50vh;
+}
+
+.container .interact {
+  width: 40%;
+  padding-top: 10rem;
+  padding-left: 5rem;
+}
+
+.container .interact .new-note {
+  border-radius: 10px;
+  height: 13rem;
+  width: 40%;
+  padding: 1rem;
+}
+
+.container .interact .button-container .add-note {
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  -webkit-clip-path: circle(20% at 50% 48.8%);
+          clip-path: circle(20% at 50% 48.8%);
+  margin-left: -2.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc400), to(rgba(53, 134, 172, 0.836)));
+  background-image: linear-gradient(to right, #ffc400, rgba(53, 134, 172, 0.836));
+}
+
+.container .interact .button-container .add-note .plus-sign {
+  color: #038f39;
+}
+
+.container .interact .button-container :hover {
+  -webkit-filter: drop-shadow(0px 2px 1px grey);
+          filter: drop-shadow(0px 2px 1px grey);
+}
+
+.notes {
+  width: 40%;
+}
+/*# sourceMappingURL=styles.css.map */
