@@ -150,6 +150,9 @@ body{
             text-align: center; 
             text-transform: uppercase;
             cursor: pointer;
+            &:hover{
+                transform: scale(1.5);
+            }
         }
     }
     #placeholder{

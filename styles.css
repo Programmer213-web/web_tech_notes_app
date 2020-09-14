@@ -191,6 +191,11 @@ body {
   cursor: pointer;
 }
 
+.notes .note::after:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .notes #placeholder {
   position: absolute;
   width: 60%;
