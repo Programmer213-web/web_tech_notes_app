@@ -33,6 +33,7 @@ document.querySelector(".add-note").addEventListener("click", function() {
         let newvalue = document.getElementsByClassName("new-note")[0].value;
         note.innerHTML = newvalue;
         status = 0;
+        document.getElementById("edit").style.opacity = 0;
     }
 });
 
@@ -46,5 +47,6 @@ for(note of notelist)
         status = 1;
         id = event.target.closest(".note").id;
         console.log(id);
+        document.getElementById("edit").style.opacity = 1;
     })
 }

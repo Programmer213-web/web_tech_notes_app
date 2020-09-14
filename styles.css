@@ -49,7 +49,7 @@ body {
 
 .container .interact {
   width: 40%;
-  padding-top: 7rem;
+  padding-top: 5rem;
   padding-left: 5rem;
 }
 
@@ -123,6 +123,7 @@ body {
 }
 
 .notes .note {
+  position: relative;
   width: 80%;
   height: 20%;
   background-color: blue;
@@ -137,8 +138,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   display: none;
-  overflow-x: hidden;
-  overflow-y: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -146,6 +145,11 @@ body {
 .notes .note:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  margin-bottom: 4rem;
+}
+
+.notes .note:hover::after {
+  opacity: 1;
 }
 
 .notes .note::-moz-selection {
@@ -156,17 +160,44 @@ body {
   background-color: #00ffea;
 }
 
+.notes .note::after {
+  content: 'Edit Note';
+  position: absolute;
+  display: block;
+  height: 60%;
+  width: 18rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff00dd), to(#33ff00));
+  background-image: linear-gradient(to top, #ff00dd, #33ff00);
+  z-index: 1;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 3rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 #edit {
   height: 3rem;
-  width: 5rem;
+  width: 15.5rem;
   background-color: yellow;
-  padding: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
   font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 1rem;
   margin-left: 1rem;
   border-radius: 10px;
   font-family: 'Poppins';
   opacity: 1;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
 }
 /*# sourceMappingURL=styles.css.map */
